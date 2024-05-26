@@ -22,14 +22,14 @@ final class GameLogic: ObservableObject {
     // MARK: - Publishd Properties
     
     @Published private(set) var noPossibleMove: Bool = false
-    @Published private(set) var score: Int = 0
+    @Published private(set) var score: Int64 = 0
     @Published private(set) var mergeMultiplier: Int = 0
     @Published private(set) var boardSize: Int
     @Published private(set) var hasMoveMergedTiles: Bool = false
     
     private(set) var lastGestureDirection: Direction = .up
 
-    private let mergeMultiplierStep: Int = 2
+    private let mergeMultiplierStep: Int = 1
     private var instanceId = 0
     private var mutableInstanceId: Int {
         instanceId += 1
@@ -194,7 +194,7 @@ final class GameLogic: ObservableObject {
                     accPrefix.append((true, mergedBlock))
                     
                     self.mergeMultiplier += self.mergeMultiplierStep
-                    self.score += (self.mergeMultiplier * mergedBlock.value)
+                    self.score += Int64((Int64(self.mergeMultiplier) * Int64(mergedBlock.value)))
                     hasMerged = true
                     
                     return accPrefix
