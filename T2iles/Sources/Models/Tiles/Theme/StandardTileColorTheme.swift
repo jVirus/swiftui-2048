@@ -23,6 +23,11 @@ struct StandardTileColorTheme: TileColorTheme {
         (Color(red:0.91, green:0.75, blue:0.24, opacity:1.00), Color.white), // 1024
         (Color(red:0.91, green:0.74, blue:0.18, opacity:1.00), Color.white), // 2048
         (Color(red:0.91, green:0.72, blue:0.12, opacity:1.00), Color.white), // 4096
+        (Color(red:0.90, green:0.70, blue:0.08, opacity:1.00), Color.white), // 8192
+        (Color(red:0.88, green:0.68, blue:0.05, opacity:1.00), Color.white), // 16384
+        (Color(red:0.84, green:0.64, blue:0.03, opacity:1.00), Color.white), // 32768
+        (Color(red:0.80, green:0.60, blue:0.02, opacity:1.00), Color.white), // 65536
+        (Color(red:0.75, green:0.56, blue:0.01, opacity:1.00), Color.white), // 131072
     ]
     
     var darkTileColors: [TilePair] = [
@@ -38,5 +43,10 @@ struct StandardTileColorTheme: TileColorTheme {
         (Color(red:0.81, green:0.65, blue:0.14, opacity:1.00), Color.white), // 1024
         (Color(red:0.81, green:0.64, blue:0.08, opacity:1.00), Color.white), // 2048
         (Color(red:0.81, green:0.62, blue:0.02, opacity:1.00), Color.white), // 4096
+        (Color(red:0.80, green:0.60, blue:0.00, opacity:1.00), Color.white), // 8192
+        (Color(red:0.78, green:0.58, blue:0.00, opacity:1.00), Color.white), // 16384
+        (Color(red:0.74, green:0.54, blue:0.00, opacity:1.00), Color.white), // 32768
+        (Color(red:0.70, green:0.50, blue:0.00, opacity:1.00), Color.white), // 65536
+        (Color(red:0.65, green:0.46, blue:0.00, opacity:1.00), Color.white), // 131072
     ]
 }
